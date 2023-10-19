@@ -1,83 +1,28 @@
-#include <stdio.h>
+#include  <stdio.h>
 #include <locale.h>
 
 
-int pagamento(){
+int main() {
 
-    int formadepagamento, i1,i3;
-    char i2[50];
-
-    setlocale(LC_all, "Portuguese");
-
-    printf("Para entrada inteira escolha a forma de pagamento: \n[1] Dinheiro\n[2] Crédito\n[3] Débito\n\n>>> ");
-    scanf("%d", &formadepagamento);
-    fflush(stdin);
-    system("cls");
-
-    switch (formadepagamento)
-    {
-    case 1:
-        printf("Para pagamentos em dinheiro dirija-se aos balcões da bilheteria (física)");
-    break;
-
-    case 2:
-        printf("Selecionado (Crédito)\n");
-        printf("Digite o número do cartão: ");
-        scanf("%d", &i1);
-        printf("\nDigite o nome do proprietário do cartão: ");
-        scanf("%s", i2);
-        fflush(stdin);                       
-        printf("\nDigite o CVV: ");
-        scanf("%d", &i3);
-
-        printf("\n");
+setlocale(LC_ALL,"Portuguese");
 
 
-        Sleep(500);
-        printf(".");
-        Sleep(500);
-        printf(".");
-        Sleep(500);
-        printf(".");
-        printf("\n");
-        printf("Compra realizada!!\nObrigado e aproveite a sessão!");
+printf("\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+printf("\t|\t\t\t                                            150 anos de Santos Dumont                                                                        |\n\n");
+printf("\t| Considerado por muitos o pai da aviação, Alberto Santos Dumont foi um grande inventor brasileiro, um dos pioneiros da invenção do avião. Por ele o homem pode voar |\n");
+printf("\t| Alberto Santos Dumont se mudou com sua família para o Rio De Janeiro e mais tarde, em 1879, São Paulo na região de Ribeirão Preto, a fim de dedicar-se a plantação |\n");
+printf("\t| de café. Por recomendação de seu pai, Ele começou a estudar mecânica, já que sempre esteve interessado nas maquinarias da fazenda. Assim em 1891 seguiu para Paris |\n");
+printf("\t| para se aprofundar em seus estudos em áreas de ciências, engenharia, química, física, eletricidade, aeronáutica e mecânica.                                        |\n");
+printf("\t| Em 4 de julho de 1898 realizou na capital francesa seu primeiro voo de um balão com propulsão própria, batizado como “Brasil”, homenagem a sua terra natal.	     |\n");
+printf("\t| Inventou dirigíveis, chuveiro de água quente, relógio de pulso, hangar e o avião 14 bis com essa invenção revolucionou o mundo e a aeronáutica para sempre.        |\n");
+printf("\t| Em 23 de outubro de 1906 fez seu primeiro voo na cidade de Paris. Com isso, conquistou o prêmio Archdeacon (Comissão Cientifica do Aero Club). A história fala que |\n");
+printf("\t| Dumont morreu deprimido, acometido pela esclerose múltipla e desolado pelo fato de uma de suas invenções, o avião, a ser utilizado como uma arma de guerra.        |\n");
+printf("\t| Segundo ele: “No começo deste século, nós, os fundadores da Aeronáutica, havíamos sonhado com um futuro pacífico e grandioso para ela. Mas a guerra veio,          |\n");
+printf("\t| apoderou-se de nossos trabalhos e, com todos os seus horrores, aterrorizou a humanidade.                                                                    |\n");
+printf("\t| Santos Dumont se suicidou-se por enforcamento no banheiro do Grand Hôtel de La Plage, na cidade litorânea Paulista Guarujá, dia 23 de julho de 1932, na época      |\n");
+printf("\t| estava com 59 anos.                                                                                                                                             |\n");
+printf("\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n");
 
-    break;
-        
-    case 3:
-        printf("Selecionado (Débito)\n");                      
-        printf("Digite o número do cartão: ");
-        scanf("%d", &i1);                            
-        printf("\nDigite o nome do proprietário do cartão: ");
-        scanf("%s", i2);
-        fflush(stdin);                         
-        printf("Digite o CVV: ");
-        scanf("%d", &i3);        
 
-        printf("\n");
-
-        Sleep(500);
-        printf(".");
-        Sleep(500);
-        printf(".");
-        Sleep(500);
-        printf(".");
-        printf("\nCompra realizada!!\nObrigado e aproveite a sessão!");
-    break;
-    }
-
-}
-
-int main(){
-    
-    int a, n1,n2;
-
-    setlocale(LC_All,"Portuguese");
-    
-    printf("Olá digite a sessão que deseja ir:\n\n[1] 100 anos da semana de arte moderna\n[2] 150 anos de Santos Dumont\n[3] Jogos Olímpicos de Paris 2024\n[4] Inteligência Artificial");
-    scanf("%d", &n1);
-
-    printf("Agora com a sessão escolhida vamos ao pagamento");
-    pagamento();
-
+printf("Queijo, hamburguer, lucas inutilismo");
 }
