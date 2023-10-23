@@ -85,7 +85,7 @@ int main(){
 
         switch(pi){
             case 1:
-                printf("\nBem vindo a seção de ingressos!\nVocê deseja?\n\n[1] Comprar ingressos para uma única exposição\n[2] Comprar ingresso para duas ou mais exposições\n\n>>> ");
+                printf("\nBem vindo a seção de ingressos!\nVocê deseja?\n\n[1] Comprar ingressos para uma única exposição\n[2] Comprar ingresso para duas ou mais exposições\n [3] voltar\n\n>>> ");
                 scanf("%d", &qntd);
                 fflush(stdin);
                 system("cls");
@@ -274,6 +274,11 @@ int main(){
                         }
 
                     break;
+
+                    case 3:
+                        printf("Retornando...");
+                        return(value == 1);
+                    break;
                 }
             break;
 
@@ -291,10 +296,5 @@ int main(){
             break;
         }
 
-        printf("\n\t\tDeseja voltar ao inicio ou encerrar?\n\n");
-        printf("[1] Voltar ao inicio\n[2] Encerrar\n\n>>> ");
-        scanf ("%d", &value);
-        fflush(stdin);
-        system("cls");
     }while (value == 1);
 }
