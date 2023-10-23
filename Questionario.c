@@ -6,9 +6,9 @@
 int nota(float grade, float lenght) {
   float result;
   result = grade / lenght;
-  printf("Resultado: %.2f\n", result);
-  printf("Nota: %.2f\n", grade);
-  printf("Tamanho: %.2f\n\n________\n\n", lenght);
+  printf("Resultado/média: %.2f\n", result);
+  printf("Nota total: %.2f\n", grade);
+  printf("Quantidade de votos: %.2f\n\n________\n\n", lenght);
   return result;
 }
 
