@@ -85,7 +85,7 @@ int main(){
 
         switch(pi){
             case 1:
-                printf("\nBem vindo a seção de ingressos!\nVocê deseja?\n\n[1] Comprar ingressos para uma única exposição\n[2] Comprar ingresso para duas ou mais exposições\n [3] voltar\n\n>>> ");
+                printf("\nBem vindo a seção de ingressos!\nVocê deseja?\n\n[1] Comprar ingressos para uma única exposição\n[2] Comprar ingresso para duas ou mais exposições\n\n>>> ");
                 scanf("%d", &qntd);
                 fflush(stdin);
                 system("cls");

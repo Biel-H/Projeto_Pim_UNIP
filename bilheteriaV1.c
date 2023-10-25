@@ -594,7 +594,7 @@ int main(){
             break;
             }
         break;
-    
+        
         case 2:
             printf("\nOk, essas são as sessões disponíveis:\n\n - 100 anos da semana de arte moderna\n - 150 anos de Santos Dumont\n - Jogos Olímpicos de Paris 2024\n - Inteligência Artificial\n"); 
         break;
