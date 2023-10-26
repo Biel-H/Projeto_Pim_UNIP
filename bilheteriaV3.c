@@ -107,7 +107,16 @@ int main(){
                     
                             switch (tipodeentrada){
                                 case 1:
-                                    printf("Ótimo, você escolheu a entrada inteira. Prossiga para a parte do pagamento!");
+                                    printf("Ótimo, você escolheu a entrada inteira. Prossiga para a parte do pagamento!\n");
+                                    Sleep(800);
+	                            	printf(".");
+	                            	Sleep(800);
+	                            	printf(".");
+	                            	Sleep(800);
+	                            	printf(".");
+	                            	printf("\nconcluido");
+	                            	Sleep(200);
+	                            	system("cls");
                                     pagamento();
                                 break;
                     
@@ -231,10 +240,39 @@ int main(){
                             fflush(stdin);
 
                             printf("\n");
+                            printf("Qual será o seu tipo de entrada?\n[1] Inteira\n[2] Meia\n[3] Isenção (Para crianças menores de 12 anos e idosos maiores de 65 anos)\n\n>>> ");
+                            scanf("%d", &tipodeentrada);
+                            fflush(stdin);
+                            system("cls");
+                            
+                            switch (tipodeentrada){
+                                case 1:
+                                    printf("\nÓtimo, você escolheu a entrada inteira. Prossiga para a parte do pagamento!\n");
+                                    Sleep(700);
+	                            	printf(".");
+	                            	Sleep(800);
+	                            	printf(".");
+	                            	Sleep(500);
+	                            	printf(".");
+	                            	printf("\nconcluido");
+	                            	Sleep(200);
+	                            	system("cls");
+                                    pagamento();
+                                break;
+                        
+                                case 2:
+                                    printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+                                    printf("| Lembre-se que com a meia entrada a carteirinha deve ser apresentada na entrada do museu! |\n");
+                                    printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n");
+                                    printf("Prossiga para o pagamento!\n\n");
+                                    Sleep(800);
+                                    pagamento();
+                                break;
 
-                            printf("Ótimas escolhas! Agora vamos ao pagamento.\n\n");
-
-                            pagamento();
+                                case 3:
+                                    printf("Para receber a isenção da entrada deve-se comprovar os seguintes itens:\n\n- Deve ter idade superior a 65 anos\n- Deve ter idade inferior a 12 anos\n");
+                                break;
+                            }
                         }
 
                         else if (multiingresso == 2 ){
@@ -251,33 +289,96 @@ int main(){
                             scanf("%d", &i3);
                             fflush(stdin);
                             printf("\n");
-                            printf("Ótimas escolhas! Agora vamos ao pagamento.\n\n");
+                            printf("Qual será o seu tipo de entrada?\n[1] Inteira\n[2] Meia\n[3] Isenção (Para crianças menores de 12 anos e idosos maiores de 65 anos)\n\n>>> ");
+                            scanf("%d", &tipodeentrada);
+                            fflush(stdin);
+                            system("cls");
+                            
+                            switch (tipodeentrada){
+                                case 1:
+                                    printf("\nÓtimo, você escolheu a entrada inteira. Prossiga para a parte do pagamento!\n");
+                                    Sleep(700);
+	                            	printf(".");
+	                            	Sleep(800);
+	                            	printf(".");
+	                            	Sleep(500);
+	                            	printf(".");
+	                            	printf("\nconcluido\n");
+	                            	Sleep(200);
+	                            	system("cls");
+                                    pagamento();
+                                break;
+                        
+                                case 2:
+                                    printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+                                    printf("| Lembre-se que com a meia entrada a carteirinha deve ser apresentada na entrada do museu! |\n");
+                                    printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n");
+                                    printf("Prossiga para o pagamento!\n\n");
+                                    Sleep(800);
+	                            	printf(".");
+	                            	Sleep(800);
+	                            	printf(".");
+	                            	Sleep(800);
+	                            	printf(".");
+	                            	printf("\nconcluido");
+	                            	Sleep(200);
+	                            	system("cls");
+                                    pagamento();
+                                break;
 
-                            pagamento();
+                                case 3:
+                                    printf("Para receber a isenção da entrada deve-se comprovar os seguintes itens:\n\n- Deve ter idade superior a 65 anos\n- Deve ter idade inferior a 12 anos\n");
+                                break;
+                            }
                         }
 
                         else if (multiingresso == 3 ){
                             printf("As exposições disponíveis são:\n\t[1] 100 Anos da semana da arte moderna\n\t[2] 150 anos de Santos Dumont\n\t[3] Jogos Olímpicos de Paris 2024\n\t[4] Inteligência Artificial\n\n");
                             printf("\tIngressos escolhidos para todas as sessões!\n\n");
-                            printf("Aguarde enquanto te levamos a aba de pagamento.\n\n");
-                            Sleep(700);
-                            printf(".");
-                            Sleep(800);
-                            printf(".");
-                            Sleep(500);
-                            printf(".");
-                            printf("\nconcluido");
-                            Sleep(200);
+							printf("\n");
+                            printf("Qual será o seu tipo de entrada?\n[1] Inteira\n[2] Meia\n[3] Isenção (Para crianças menores de 12 anos e idosos maiores de 65 anos)\n\n>>> ");
+                            scanf("%d", &tipodeentrada);
+                            fflush(stdin);
                             system("cls");
+                            
+                            switch (tipodeentrada){
+                                case 1:
+                                    printf("\nÓtimo, você escolheu a entrada inteira. Prossiga para a parte do pagamento!\n");
+                                    Sleep(700);
+	                            	printf(".");
+	                            	Sleep(800);
+	                            	printf(".");
+	                            	Sleep(500);
+	                            	printf(".");
+	                            	printf("\nconcluido");
+	                            	Sleep(200);
+	                            	system("cls");
+                                    pagamento();
+                                break;
+                        
+                                case 2:
+                                    printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+                                    printf("| Lembre-se que com a meia entrada a carteirinha deve ser apresentada na entrada do museu! |\n");
+                                    printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n");
+                                    printf("Prossiga para o pagamento!\n\n");
+                                    Sleep(800);
+	                            	printf(".");
+	                            	Sleep(800);
+	                            	printf(".");
+	                            	Sleep(800);
+	                            	printf(".");
+	                            	printf("\nconcluido");
+	                            	Sleep(200);
+	                            	system("cls");
+                                    pagamento();
+                                break;
 
-                            pagamento();
+                                case 3:
+                                    printf("Para receber a isenção da entrada deve-se comprovar os seguintes itens:\n\n- Deve ter idade superior a 65 anos\n- Deve ter idade inferior a 12 anos\n");
+                                break;
+                            }
                         }
 
-                    break;
-
-                    case 3:
-                        printf("Retornando...");
-                        return(value == 1);
                     break;
                 }
             break;
@@ -295,6 +396,10 @@ int main(){
                 printf("|_________________________|\n");
             break;
         }
-
+		printf("\n\t\tDeseja voltar ao inicio ou encerrar?\n\n");
+        printf("[1] Voltar ao inicio\n[2] Encerrar\n\n>>> ");
+        scanf ("%d", &value);
+        fflush(stdin);
+        system("cls");
     }while (value == 1);
 }

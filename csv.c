@@ -2,8 +2,8 @@
 
 int main() {
     // Definindo o array de frutas
-    const char *frutas[4] = {"1, Gabriel, 28/02/2004", "2, Vitor, 6/06/2001", "3, Ryan, 28/04/2000", "4, Giovani, 12/12/2010"};
-    int tamanho_array = sizeof(frutas) / sizeof(frutas[0]);
+    const char *usuarios[4] = {"1, Gabriel, 28/02/2004", "2, Vitor, 6/06/2001", "3, Ryan, 28/04/2000", "4, Giovani, 12/12/2010"};
+    int tamanho_array = sizeof(usuarios) / sizeof(usuarios[0]);
     int i;
 
     // Abrindo o arquivo CSV para escrita
@@ -20,7 +20,7 @@ int main() {
     // Escrevendo os elementos do array no arquivo CSV
     for (i = 0; i < tamanho_array; i++) {
         //for(j=0; j < ; i++){
-            fprintf(fp, "%s\n", frutas[i]);
+            fprintf(fp, "%s\n", usuarios[i]);
         //}
     }
 
