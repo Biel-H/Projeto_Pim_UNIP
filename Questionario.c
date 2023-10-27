@@ -12,11 +12,11 @@ int nota(float grade, float lenght) {
   return result;
 }
 
-int main() {
-  int op, oa, ol;
+int main() {  
+  int op, oa, ol, ou;
   char x[40];
   char z[40];
-  float notes_op = 0, notes_oa = 0, notes_ol = 0, lenght_op = 0, lenght_oa = 0, lenght_ol = 0;
+  float notes_op = 0, notes_oa = 0, notes_ol = 0, notes_ou = 0, lenght_op = 0, lenght_oa = 0, lenght_ol = 0, lenght_ou = 0;
   int controller = 0;
 
   setlocale(LC_ALL, "Portuguese");
@@ -134,10 +134,10 @@ int main() {
 
     printf("\t150 anos de Santos Dumont \n\n");
     printf("O QUE VC ACHOU DE NOSSAS EXPOSIÇÕES? \n");
-    printf("1 -> EXCELENTE \n");
-    printf("2 -> BOA \n");
-    printf("3 -> RUIM \n");
-    printf("4 -> PÉSSIMA\n\n>>> ");
+    printf("1 -> Péssima \n");
+    printf("2 -> Ruim \n");
+    printf("3 -> Boa \n");
+    printf("4 -> Excelente\n\n>>> ");
 
     scanf("%d", &ol);
     fflush(stdin);
@@ -146,22 +146,6 @@ int main() {
 
     case 1:
       notes_ol = notes_ol + 1;
-      lenght_ol = lenght_ol + 1;
-      printf("\tOBRIGADO! FICAMOS FELIZ QUE VOCÊ TENHA GOSTADO!\n\n");
-      // sleep(10);
-      system("cls");
-      break;
-
-    case 2:
-      notes_ol = notes_ol + 2;
-      lenght_ol = lenght_ol + 1;
-      printf("\tOBRIGADO! FICAMOS FELIZ QUE VOCÊ TENHA GOSTADO!\n\n");
-      // sleep(10);
-      system("cls");
-      break;
-
-    case 3:
-      notes_ol = notes_ol + 3;
       lenght_ol = lenght_ol + 1;
       printf("\tQUE PENA QUE VOCÊ NÃO TENHA GOSTADO!\n\n");
       printf(" O QUE PODEMOS MELHORAR??\n\nDigite sua sugestão: ");
@@ -172,14 +156,30 @@ int main() {
       system("cls");
       break;
 
-    case 4:
-      notes_ol = notes_ol + 4;
+    case 2:
+      notes_ol = notes_ol + 2;
       lenght_ol = lenght_ol + 1;
       printf("\tQUE PENA QUE VC NAO TENHA GOSTADO!\n\n");
       printf(" O QUE PODEMOS MELHORAR?\n\nDigite sua sugestão: ");
       fgets(z, 40, stdin);
       fflush(stdin);
       printf("Obrigado pelo Feedback!!");
+      // sleep(10);
+      system("cls");
+      break;
+
+    case 3:
+      notes_ol = notes_ol + 3;
+      lenght_ol = lenght_ol + 1;
+      printf("\tOBRIGADO! FICAMOS FELIZ QUE VOCÊ TENHA GOSTADO!\n\n");
+      // sleep(10);
+      system("cls");
+      break;
+
+    case 4:
+      notes_ol = notes_ol + 4;
+      lenght_ol = lenght_ol + 1;
+      printf("\tOBRIGADO! FICAMOS FELIZ QUE VOCÊ TENHA GOSTADO!\n\n");
       // sleep(10);
       system("cls");
       break;

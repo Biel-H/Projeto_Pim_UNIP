@@ -3,7 +3,6 @@
 
 int main(){
     char dumont;
-    char grand;
 
     setlocale (LC_ALL,"Portuguese");
     printf ("o avião 14 bis com essa invenção revolucionou o mundo e a aeronáutica para sempre.");
